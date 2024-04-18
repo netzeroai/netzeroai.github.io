@@ -28,8 +28,3 @@ format:
 website:
   favicon: images/logo.ico
   page-navigation: false
-  sidebar: true
-  navbar:
-    background: transparent
-    title: false
-    search: false
