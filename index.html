@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="keywords" content="aviation, sustainability, net-zero, AI, machine learning">
+
+<title>Towards Net-Zero Aviation with AI</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/logo.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta name="twitter:title" content="Towards Net-Zero Aviation with AI">
+<meta name="twitter:description" content="A mini-workshop | June 4-5 2024 | Georgia Institute of Technology">
+<meta name="twitter:image" content="images/me.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+        <div class="quarto-navbar-tools ms-auto">
+</div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#workshop-scope" id="toc-workshop-scope" class="nav-link active" data-scroll-target="#workshop-scope">Workshop scope</a></li>
+  <li><a href="#organizers" id="toc-organizers" class="nav-link" data-scroll-target="#organizers">Organizers</a></li>
+  <li><a href="#speakers-participants" id="toc-speakers-participants" class="nav-link" data-scroll-target="#speakers-participants">Speakers &amp; Participants</a></li>
+  <li><a href="#registration" id="toc-registration" class="nav-link" data-scroll-target="#registration">Registration</a></li>
+  <li><a href="#location" id="toc-location" class="nav-link" data-scroll-target="#location">Location</a></li>
+  <li><a href="#sponsors" id="toc-sponsors" class="nav-link" data-scroll-target="#sponsors">Sponsors</a></li>
+  <li><a href="#agenda" id="toc-agenda" class="nav-link" data-scroll-target="#agenda">Agenda</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Towards Net-Zero Aviation with AI</h1>
+<p class="subtitle lead">A mini-workshop | June 4-5 2024 | Georgia Institute of Technology</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="column-page">
+<p><img src="images/airport.jpg" class="img-fluid"></p>
+</div>
+<section id="workshop-scope" class="level3">
+<h3 class="anchored" data-anchor-id="workshop-scope">Workshop scope</h3>
+<p><strong>The objective of this mini-workshop is to identify specific challenges and solution strategies for reducing emissions in aviation within the next five years. Given this stringent deadline, the focus is on enhancing existing operations, infrastructure, and policy rather than developing new aircraft designs. We will explore how artificial intelligence (AI), in all its forms, can be a driving force for sustainability in aviation.</strong></p>
+<p>AI efforts depend on the availability and ability to mine insightful data. While large amounts of data exist – ranging from flight trajectories to airport traffic records, surveillance videos, satellite images, audio communications, and aircraft performance logs – extracting sustainability insights and forecasting outcomes remains challenging. As with all AI applications, prudence is critical when addressing matters of safety, security, and privacy.</p>
+<p>This workshop will focus on three key areas:</p>
+<ol type="1">
+<li><p><strong>Quantifying Impact</strong>: Identify avenues where AI can more rigorously quantify aviation’s climate impact (e.g., developing more precise carbon calculators).</p></li>
+<li><p><strong>Data Collaboration</strong>: Develop approaches for data sharing and sanitization that protect commercial interests while enabling open-source initiatives of benefit to all.</p></li>
+<li><p><strong>Actionable Pathways</strong>: Develop AI-driven implementation strategies, policies, and regulatory directions to reduce carbon and greenhouse gas emissions based on findings from areas 1 and 2.</p></li>
+</ol>
+<p>To provide focus, the workshop will address sustainability initiatives related to civil airports and aircraft (both freight and passenger), examining both in-air and ground-based environmental impact.</p>
+<p><img src="images/figure.png" class="img-fluid" style="width:100.0%"></p>
+<p>To learn more about some directions, click on the links below.</p>
+<details>
+<summary>
+On the ground
+</summary>
+<p>On the ground, the focus will be on reducing Scope 1 and Scope 3 emissions as defined by the Airport Carbon Accreditation program.</p>
+<p>Scope 1 emissions are those directly generated by the airport (e.g.&nbsp;from its own vehicles and operations). Scope 3 emissions include indirect sources, such as aircraft emissions within the airport’s control. Airport infrastructure contributes significantly to global emissions, accounting for 10 to 16 million metric tons of carbon dioxide annually. While this represents only 2-5% of total aviation-related carbon emissions, the sector’s projected growth demands urgent action.</p>
+<p>To address this, airports worldwide are undertaking ambitious sustainability projects. These range from retrofitting existing infrastructure to designing new buildings with sustainability in mind, as well as optimizing the use of existing energy resources. Better tracking of airport vehicles, taxing aircraft, and passenger movements using CCTV and non-optical sensors could guide further sustainability initiatives. This data can help reduce the unnecessary use of aircraft auxiliary power units, optimize ground vehicle movement, and improve the efficiency of fueling operations.</p>
+<p>While Scope 2 emissions (indirect, from purchased energy) fall outside the airport’s direct control, AI-driven solutions can forecast airport energy consumption, guiding more sustainable off-site power generation strategies.</p>
+<p>A compelling case exists for AI’s role in optimizing sustainable aviation fuel (SAF) production. AI can help determine the most suitable feedstocks, considering production constraints and refining processes. It can factor in climate, crop yields, and waste product availability for such optimization. Researchers from Washington State University and the Pacific Northwest National Laboratory are already using computational methods to optimize SAF distillation processes.</p>
+<p>In the coming years, alcohol-to-SAF and syngas-to-SAF pathways are expected to scale rapidly due to feedstock availability. The significant infrastructural investment required presents clear opportunities for AI-driven planning and optimization.</p>
+</details>
+<details>
+<summary>
+In the air
+</summary>
+<p>In the air, the focus will be on flight optimization to minimize both <span class="math inline">\(CO_2\)</span> and non-<span class="math inline">\(CO_2\)</span> (e.g., contrails) effects. These can be broken down into (i) engine-specific actions for reducing fuel burn—e.g., optimizing engine washing cycles, and better characterization of component wear on fuel consumption; (ii) the impact of introducing sustainable aviation fuel; (iii) eliminating operational routing inefficiencies, aligned with enhanced monitoring of airframe and engine inputs, and (iv) reducing the contribution to contrails. While many of these ideas have been well publicized, what is opaque is how AI can catapult these initiatives. In some cases, airlines have been able to design individual flights that address factors (i)-(iv). However, they have been unable to scale these individual successes. It is expected that during the workshop the challenges associated with scaling such initiatives will be discussed in conjunction with the role AI can play. Additionally, a key thrust will revolve around how a combination of advanced weather models, large language models, and other AI advances can be adapted to better forecast what will happen, following any operational and policy decisions.</p>
+</details>
+</section>
+<section id="organizers" class="level3">
+<h3 class="anchored" data-anchor-id="organizers">Organizers</h3>
+<ul>
+<li>Pranay Seshadri | Georgia Institute of Technology</li>
+<li>Carry Ayne Jones-Parr | Science &amp; Innovation Network</li>
+</ul>
+</section>
+<section id="speakers-participants" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="speakers-participants">Speakers &amp; Participants</h3>
+<ul>
+<li>Melinda Z. Pagliarello | Airports Council International - North America</li>
+<li>Benjamin Emerson | Georgia Tech</li>
+<li>Davis Lee &amp; Amir Roshan | Georgia Tech</li>
+<li>Nicholas Bojdo | University of Manchester</li>
+<li>Dan Rotherham | University of Manchester</li>
+<li>Alex Covarrubias | Zensors</li>
+</ul>
+<p><mark>More speakers to come here!</mark></p>
+<div class="column-page">
+<p><img src="images/fig.png" class="img-fluid"></p>
+</div>
+</section>
+<section id="registration" class="level3">
+<h3 class="anchored" data-anchor-id="registration">Registration</h3>
+<p>Currently, registration is limited to a small pool of academics, aviation industry and government employees. If you are interested in participating in this workshop, please do email Pranay Seshadri (<a href="mailto:prse@gatech.edu" class="email">prse@gatech.edu</a>).</p>
+</section>
+<section id="location" class="level3">
+<h3 class="anchored" data-anchor-id="location">Location</h3>
+<p>Weber Building, <br> Daniel Guggenheim School of Aerospace Engineering, <br> Georgia Institute of Technology</p>
+</section>
+<section id="sponsors" class="level3">
+<h3 class="anchored" data-anchor-id="sponsors">Sponsors</h3>
+<ul>
+<li>Georgia Institute of Technology</li>
+<li>United Kingdom Science &amp; Innovation Network</li>
+</ul>
+</section>
+<section id="agenda" class="level3">
+<h3 class="anchored" data-anchor-id="agenda">Agenda</h3>
+<p><mark> Preliminary </mark></p>
+
+<table>
+<tbody><tr>
+<th style="width:35%">
+10:00 - 11:00
+</th>
+<td>
+Estimating aircraft fuel consumption with airport CCTV: A study on emissions, SAF and Tankering
+</td>
+</tr>
+<tr>
+<th style="width:35%">
+11:00 - 12:00
+</th>
+<td>
+Talk by ACI International
+</td>
+</tr>
+<tr>
+<th style="width:35%">
+3: 12:00 - 13:00
+</th>
+<td>
+Lunch
+</td>
+</tr>
+<tr>
+<th style="width:35%">
+4: 13:00 - 14:00
+</th>
+<td>
+Panel discussion: The role large weather models can play in reducing emissions
+</td>
+</tr>
+<tr>
+<th style="width:35%">
+5: 14:00 - 15:00
+</th>
+<td>
+Fostering greater sustainability by optimizing the airspace
+</td>
+</tr>
+<tr>
+<th style="width:35%">
+6: 16:00 - 17:00
+</th>
+<td>
+Open-source datasets and sandboxes to test models
+</td>
+</tr>
+<tr>
+<th style="width:35%">
+7: 18:00 - 21:00
+</th>
+<td>
+Dinner
+</td>
+</tr>
+
+</tbody></table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
