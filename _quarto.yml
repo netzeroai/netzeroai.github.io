@@ -18,7 +18,7 @@ format:
     font-size: 2.2rem;
     minial: true
     twitter-card:
-      image: "images/me.jpg"
+      image: "images/airport.jpg"
     keywords: aviation, sustainability, net-zero, AI, machine learning
     pagetitle: Towards Net-Zero Aviation with AI
     favicon: images/logo.ico
