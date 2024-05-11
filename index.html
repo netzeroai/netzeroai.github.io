@@ -25,6 +25,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -62,13 +63,25 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>
 
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: #000000;
+      }
+
       .quarto-title-block .quarto-title-banner {
-        background: #303E4E;
+        color: #000000;
+background-image: url(images/sustainable.png);
+background-size: cover;
       }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&amp;display=swap" rel="stylesheet">
 
 
 <meta name="twitter:title" content="Towards Net-Zero Aviation with AI">
@@ -77,13 +90,27 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body>
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Pre-workshop reading
+      </li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
+    <div class="quarto-title column-body">
       <h1 class="title">Towards Net-Zero Aviation with AI</h1>
             <p class="subtitle lead">A mini-workshop | June 4-5 2024 | Georgia Institute of Technology</p>
                       </div>
@@ -106,6 +133,48 @@ ul.task-list li input[type="checkbox"] {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Pre-workshop reading</a> 
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://nap.nationalacademies.org/catalog/14225/guidebook-on-preparing-airport-greenhouse-gas-emissions-inventories" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guidebook on Preparing Airport Greenhouse Gas Emissions Inventories</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://aci.aero/wp-content/uploads/2023/08/2023_ACERT_v7.0-Brochure.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Airport Carbon Emissions Reporting Tool</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://www.faa.gov/sites/faa.gov/files/2021-11/Aviation_Climate_Action_Plan.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAA 2021 Aviation Climate Action Plan</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://www.icao.int/environmental-protection/CORSIA/Documents/Leaflet_CORSIA_Focal_Points.pdf?_gl=1%2ac0vpp3%2a_ga%2aMjg1ODI5NzAwLjE3MTA0MjExMzM.%2a_ga_992N3YDLBQ%2aMTcxMDQzMjgxOC40LjEuMTcxMDQzMzUzOS4wLjAuMA.." class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://assets.publishing.service.gov.uk/media/62e931d48fa8f5033896888a/jet-zero-strategy.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jet Zero Strategy: Delivering net zero aviation by 2050</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -114,33 +183,30 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#scope" id="toc-scope" class="nav-link active" data-scroll-target="#scope">Scope</a></li>
   <li><a href="#speakers-participants" id="toc-speakers-participants" class="nav-link" data-scroll-target="#speakers-participants">Speakers &amp; Participants</a></li>
-  <li><a href="#pre-workshop-reading" id="toc-pre-workshop-reading" class="nav-link" data-scroll-target="#pre-workshop-reading">Pre-workshop reading</a></li>
   <li><a href="#registration" id="toc-registration" class="nav-link" data-scroll-target="#registration">Registration</a></li>
   <li><a href="#location" id="toc-location" class="nav-link" data-scroll-target="#location">Location</a></li>
   <li><a href="#sponsors" id="toc-sponsors" class="nav-link" data-scroll-target="#sponsors">Sponsors</a></li>
-  <li><a href="#talks" id="toc-talks" class="nav-link" data-scroll-target="#talks">Talks</a></li>
+  <li><a href="#agenda-1.5-day-workshop" id="toc-agenda-1.5-day-workshop" class="nav-link" data-scroll-target="#agenda-1.5-day-workshop">Agenda (1.5 day workshop)</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
 
 
 
 
-<p><img src="images/airport.jpg" class="img-fluid" style="width:100.0%"></p>
+<p><img src="images/figure.png" class="img-fluid" style="width:100.0%"></p>
 <section id="scope" class="level3">
 <h3 class="anchored" data-anchor-id="scope">Scope</h3>
 <p>Successful AI efforts are underpinned on the availability and ability to mine insightful data. While large amounts of data exist – ranging from flight trajectories to airport traffic records, surveillance videos, satellite images, audio communications, and aircraft performance logs – extracting sustainability insights and forecasting outcomes remains challenging. As with all AI applications, prudence is critical when addressing matters of safety, security, and privacy.</p>
-<p><img src="images/figure.png" class="img-fluid" style="width:100.0%"></p>
 <p>This workshop will focus on three key areas:</p>
 <ol type="1">
 <li><p><strong>Quantifying Impact</strong>: Identify avenues where AI can more rigorously quantify aviation’s climate impact (e.g., developing more precise carbon calculators).</p></li>
 <li><p><strong>Data Collaboration</strong>: Develop approaches for data sharing and sanitization that protect commercial interests while enabling open-source initiatives of benefit to all.</p></li>
 <li><p><strong>Actionable Pathways</strong>: Develop AI-driven implementation strategies, policies, and regulatory directions to reduce carbon and greenhouse gas emissions based on findings from areas 1 and 2.</p></li>
 </ol>
-<p>To provide focus, the workshop will address sustainability initiatives related to civil airports and aircraft (both freight and passenger), examining both in-air and ground-based environmental impact. For more information, please click <a href="more_info.html">here</a>.</p>
-<p><img src="images/fig.png" class="img-fluid" style="width:100.0%"></p>
+<p>To provide focus, the workshop will address sustainability initiatives related to civil airports and aircraft (both freight and passenger), examining both in-air and ground-based environmental impact.</p>
 </section>
 <section id="speakers-participants" class="level3">
 <h3 class="anchored" data-anchor-id="speakers-participants">Speakers &amp; Participants</h3>
@@ -151,6 +217,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Amir Roshan | Georgia Tech</li>
 <li>Elizabeth Qian | Georgia Tech</li>
 <li>Michael Balchanos | Georgia Tech</li>
+<li>Josiah Hester | Georgia Tech</li>
 <li>Tim Lieuwen | Georgia Tech</li>
 <li>Valerie Thomas | Georgia Tech</li>
 <li>Levi Boggs | Georgia Tech Research Institute</li>
@@ -163,17 +230,6 @@ ul.task-list li input[type="checkbox"] {
 <li>Rajan Gupta | Centelli</li>
 <li>Kevin Staples | Salt Lake City Airport</li>
 <li>Douglas Rao | North Carolina Institute for Climate Studies</li>
-</ul>
-</section>
-<section id="pre-workshop-reading" class="level3">
-<h3 class="anchored" data-anchor-id="pre-workshop-reading">Pre-workshop reading</h3>
-<p>The following optional reading list is provided to all participants.</p>
-<ul>
-<li><p>National Academies of Sciences, Engineering, and Medicine. 2009. Guidebook on Preparing Airport Greenhouse Gas Emissions Inventories. Washington, DC: The National Academies Press. https://doi.org/10.17226/14225</p></li>
-<li><p>Airport Council International. 2023. <a href="https://aci.aero/wp-content/uploads/2023/08/2023_ACERT_v7.0-Brochure.pdf">Airport Carbon Emissions Reporting Tool, Version 7</a>.</p></li>
-<li><p>Federal Aviation Adminstration. 2021. <a href="https://www.faa.gov/sites/faa.gov/files/2021-11/Aviation_Climate_Action_Plan.pdf">Aviation Climate Action Plan</a></p></li>
-<li><p>International Civil Aviation Organization. 2023. <a href="https://www.icao.int/environmental-protection/CORSIA/Documents/Leaflet_CORSIA_Focal_Points.pdf?_gl=1%2ac0vpp3%2a_ga%2aMjg1ODI5NzAwLjE3MTA0MjExMzM.%2a_ga_992N3YDLBQ%2aMTcxMDQzMjgxOC40LjEuMTcxMDQzMzUzOS4wLjAuMA..">Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA)</a></p></li>
-<li><p>Department for Transport. 2022. <a href="https://assets.publishing.service.gov.uk/media/62e931d48fa8f5033896888a/jet-zero-strategy.pdf">Jet Zero Strategy: Delivering net zero aviation by 2050</a>.</p></li>
 </ul>
 </section>
 <section id="registration" class="level3">
@@ -193,91 +249,156 @@ ul.task-list li input[type="checkbox"] {
 <li>United Kingdom Science &amp; Innovation Network</li>
 </ul>
 </section>
-<section id="talks" class="level3">
-<h3 class="anchored" data-anchor-id="talks">Talks</h3>
+<section id="agenda-1.5-day-workshop" class="level3">
+<h3 class="anchored" data-anchor-id="agenda-1.5-day-workshop">Agenda (1.5 day workshop)</h3>
+<section id="june-4th-2024" class="level4">
+<h4 class="anchored" data-anchor-id="june-4th-2024">June 4th 2024</h4>
+<table class="table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 30%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Activity</th>
+<th>Speaker</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>09:00 - 09:30</td>
+<td><em>Registration, coffee and pastries</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>09:30 - 10:00</td>
+<td>Introduction and an assessment of carbon emissions in aviation</td>
+<td>P. Seshadri</td>
+</tr>
+<tr class="odd">
+<td>10:00 - 10:30</td>
+<td>Airport decarbonization landscape &amp; existing challenges</td>
+<td>J. Wolchansky &amp; C. Shannon</td>
+</tr>
+<tr class="even">
+<td>10:30 - 11:00</td>
+<td>Existing tools for carbon estimation &amp; limitations</td>
+<td>TBD</td>
+</tr>
+<tr class="odd">
+<td>11:00 - 11:30</td>
+<td>Salt Lake City airport case study</td>
+<td>TBD</td>
+</tr>
+<tr class="even">
+<td>11:30 - 12:00</td>
+<td>Digital engineering and AI-enabled solutions for sustainable infrastructure planning: The ATL aerotropolis</td>
+<td>M. Balchanos</td>
+</tr>
+<tr class="odd">
+<td>12:00 - 12:30</td>
+<td>Foundation AI models for mission critical verticals in airports</td>
+<td>A. Covarrubias</td>
+</tr>
+<tr class="even">
+<td>12:00 - 13:30</td>
+<td><em>Lunch</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>13:30 - 14:00</td>
+<td>Sustainable fuels research at Georgia Tech</td>
+<td>B. Emerson</td>
+</tr>
+<tr class="even">
+<td>14:00 - 14:30</td>
+<td>Challenges in bringing sustainable fuels to airports</td>
+<td>TBD</td>
+</tr>
+<tr class="odd">
+<td>14:30 - 15:30</td>
+<td><em>Coffee and breakout session I</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>15:30 - 16:00</td>
+<td>Using flight tracking data and atmospheric weather to estimate aviation emissions</td>
+<td>N. Bodjo</td>
+</tr>
+<tr class="odd">
+<td>16:00 - 16:30</td>
+<td>Weather and environmental assessments in the age of AI</td>
+<td>D. Rao</td>
+</tr>
+<tr class="even">
+<td>16:30 - 18:30</td>
+<td><em>Break for the day</em></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>18:30 - 21:30</td>
+<td>Dinner</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Dinner venue</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6626.231039754863!2d-84.43420862306161!3d33.860913627806795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50fe4ca15365b%3A0xe82299fb3e7a524c!2s1320%20Beechwood%20Hills%20Ct%20NW%2C%20Atlanta%2C%20GA%2030327!5e0!3m2!1sen!2sus!4v1715445250075!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</section>
+<section id="june-5th-2024" class="level4">
+<h4 class="anchored" data-anchor-id="june-5th-2024">June 5th 2024</h4>
+<table class="table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 30%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Activity</th>
+<th>Speaker</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>09:00 - 09:30</td>
+<td><em>Coffee and pastries</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>09:30 - 10:00</td>
+<td>Novel sensors and how they may facilitate paths to decarbonization</td>
+<td>J. Hester</td>
+</tr>
+<tr class="odd">
+<td>10:00 - 10:30</td>
+<td>Machine learning to reduce unwanted APU usage</td>
+<td>TBD</td>
+</tr>
+<tr class="even">
+<td>10:30 - 11:30</td>
+<td>Sustainability from an airline’s perspective</td>
+<td>TBD</td>
+</tr>
+<tr class="odd">
+<td>11:30 - 12:30</td>
+<td><em>Breakout session II</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>12:30 - 12:45</td>
+<td><em>Next steps</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
-<table>
-<tbody><tr>
-<th style="width:9%">
-1
-</th>
-<th style="width:25%">
-Pranay Seshadri
-</th>
-<td>
-Aviation carbon emissions in pi-charts
-</td>
-</tr>
-<tr>
-<th style="width:9%">
-2
-</th>
-<th style="width:25%">
-Jen Wolchansky &amp; Carly Shannon
-</th>
-<td>
-Airport decarbonization landscape &amp; existing challenges
-</td>
-</tr>
-<tr>
-<th style="width:9%">
-3
-</th>
-<th style="width:25%">
-Alex Covarrubias
-</th>
-<td>
-Foundation AI models for mission critical verticals in airports
-</td>
-</tr>
-<tr>
-<th style="width:9%">
-4
-</th>
-<th style="width:25%">
-Michael Balchanos
-</th>
-<td>
-Digital engineering and AI-enabled solutions for sustainable infrastructure planning: The ATL aerotropolis
-</td>
-</tr>
-<tr>
-<th style="width:9%">
-5
-</th>
-<th style="width:25%">
-Benjamin Emerson
-</th>
-<td>
-Sustainable aviation fuels research at Georgia Tech
-</td>
-</tr>
-<tr>
-<th style="width:9%">
-6
-</th>
-<th style="width:25%">
-Douglas Rao
-</th>
-<td>
-Atmospheric models and better forecasting the weather
-</td>
-</tr>
-<tr>
-<th style="width:9%">
-7
-</th>
-<th style="width:25%">
-Dan Rotherham &amp; Nicholas Bojdo
-</th>
-<td>
-Using flight tracking data and atmospheric weather to estimate aviation emissions
-</td>
-</tr>
 
-</tbody></table>
-
-
+</section>
 </section>
 
 </main> <!-- /main -->

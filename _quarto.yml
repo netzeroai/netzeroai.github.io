@@ -8,14 +8,13 @@ format:
     page-layout: full
     toc: true
     code-fold: false
-    theme: flatly
     header-includes: |
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    mainfont: "Lato"
+      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
+    mainfont: "Nunito Sans"
+    theme: simplex
     code-tools: false
-    font-size: 2.2rem;
     minial: true
     twitter-card:
       image: "images/airport.jpg"
@@ -28,3 +27,19 @@ format:
 website:
   favicon: images/logo.ico
   page-navigation: false
+  sidebar:
+      title: "Pre-workshop reading"
+      subtitle: "Links"
+      search: false
+      style: "floating"
+      contents:
+        - text: "Guidebook on Preparing Airport Greenhouse Gas Emissions Inventories"
+          href: "https://nap.nationalacademies.org/catalog/14225/guidebook-on-preparing-airport-greenhouse-gas-emissions-inventories"
+        - text: "Airport Carbon Emissions Reporting Tool"
+          href: "https://aci.aero/wp-content/uploads/2023/08/2023_ACERT_v7.0-Brochure.pdf"
+        - text: "FAA 2021 Aviation Climate Action Plan"
+          href: "https://www.faa.gov/sites/faa.gov/files/2021-11/Aviation_Climate_Action_Plan.pdf"
+        - text: "Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA)"
+          href: "https://www.icao.int/environmental-protection/CORSIA/Documents/Leaflet_CORSIA_Focal_Points.pdf?_gl=1%2ac0vpp3%2a_ga%2aMjg1ODI5NzAwLjE3MTA0MjExMzM.%2a_ga_992N3YDLBQ%2aMTcxMDQzMjgxOC40LjEuMTcxMDQzMzUzOS4wLjAuMA.."
+        - text: "Jet Zero Strategy: Delivering net zero aviation by 2050"
+          href: "https://assets.publishing.service.gov.uk/media/62e931d48fa8f5033896888a/jet-zero-strategy.pdf"
